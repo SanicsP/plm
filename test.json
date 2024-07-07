@@ -1,0 +1,16 @@
+{
+    "name":"example prompt",
+    "prompt":"a green horse",
+    "negative_prompt":"ugly , bad quality , cartoon",
+    "description":"for test",
+    "themes":["animal","spatial"],
+    "extra":{
+        "param_list":[
+            {"param_name":"size","param_value":"1024x1024"}
+        ],
+        "model_name":{},
+        "prompt_quality":"97.3",
+        "ref_image_path":"harlem.jpg",
+        "result_image_path":"wfc10.png"}
+
+}

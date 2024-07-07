@@ -1,0 +1,31 @@
+{
+	"name": "prompt example",
+	"prompt": "An astronaute riding a green horse in mars , stars , moon , orange sky , mountains",
+	"negative_prompt": "ugly , bad , deformed , monster , cryptic",
+	"description": "a prompt representing a green horse in mars",
+	"themes": [
+		"space",
+		"crazy",
+		"surreal"
+	],
+	"extra": {
+		"param_list": [
+			{
+				"param_name": "cfg scale",
+				"param_value": "4.523"
+			},
+			{
+				"param_name": "seed",
+				"param_value": "15545555616543283"
+			},
+			{
+				"param_name": "size",
+				"param_value": "1024x1024"
+			}
+		],
+		"model_name": "sdxl-1.0",
+		"prompt_quality": "9.1",
+		"ref_image_path": "",
+		"result_image_path": ""
+	}
+}
