@@ -4,6 +4,65 @@
     --main-shadow : 5px 5px 5px rgba(0, 0, 0, 0.205);
 }
 
+
+html {
+    height: 100%;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+
+header {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 75px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #f85f34;
+}
+
+header nav {
+    width: 100%;
+    height: 50px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: white;
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header nav span 
+{
+    background-color: #ff8351;
+    padding: 2px;
+    border-radius: 5px;
+    cursor: pointer;;
+}
+
+header nav span:hover 
+{
+    background-color: #ff8554;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+header nav span a {
+    text-decoration: none;
+    color: white;
+}
+
+
 .editor {
     display: flex;
     justify-content: center;

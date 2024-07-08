@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+
+    <body>
+        <div class="root">
+
+        <header>
+                <h1>Prompt library manager</h1>
+                <nav>
+                    <span id="save_button">save</span>
+                    <span id="open_button">open</span>
+                    <input type="file" id="load_file">
+                    <span><a href="prompt-creation.html">add prompt</a></span>   
+                </nav>
+        </header>
+
+
+        <div class="search-container">
+            <div class="search-bar">
+                <input type="text" placeholder="search.." id="search_bar">
+                
+                <span id="search_button"></span>
+                <div class="filter-select">
+                    <select name="" id="filter_select">
+                        <optgroup label="filters">
+                            <option value="prompts">Prompts</option>
+                            <option value="themes">Themes</option>
+                            <option value="names">Names</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="card-container" id="card_list">
+            <div class="prompt-card">
+                
+                <div class="image-container"> <img src="resources/example3.png" alt=""></div>
+                
+                <div class="text-container">
+                    <h4>Prompt name</h4>
+                    <p>cartoon character of a person with a hoodie , in style of cytus and deemo, ork, gold chains, realistic anime cat, dripping black goo, lineage revolution style, thug life, cute anthropomorphic bunny, balrog, arknights, aliased, very buff, black and red and yellow paint, painting illustration collage style, character 
+                        composition in vector with white background</p>
+                </div>
+
+                <div class="tag-container">
+                    <span>theme 1</span>
+                </div>
+
+            </div>
+        </div>
+        
+        
+
+    </div>
+
+    <div class="details-menu" id="details_menu">
+        <div class="text-details">
+            
+            <h2 id="prompt_name_text">Prompt name</h2>
+
+            <h3>Prompt</h3>
+
+            <p id="prompt_text" class="text-info">Prompt..</p>
+            
+            <h3>Negative Prompt</h3>
+
+            <p id="negative_prompt_text" class="text-info">Negative prompt..</p>
+
+            <h3>Description</h3>
+            
+            <p id="description_text" class="text-info">Description..</p>
+            
+            <h3>Themes</h3>
+
+            <div class="tag-container" id="theme_list">
+                <span>theme..</span>
+            </div>
+
+            <h3>Model name : <span id="model_name_text">Model..</span></h3>
+
+            <h3>Quality : <span id="quality_text">5/10</span></h3>
+
+        </div>
+        
+        <h3>Custom parameters : </h3>
+
+        <div class="param-list" id="param_list">
+            <div class="parameter"> 
+                <span class="param-name-info">name..</span>
+                <span class="param-value-info">value..</span>
+            </div>
+        </div>
+
+        <div class="image-details">
+            <h2>Reference image</h2>
+            <img src="resources/example1.webp" alt="" id="ref_image_detail">
+            <h2>Result image</h2>
+            <img src="resources/example2.png" alt="" id="result_image_detail">
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="prompt-visualisation.css">
+    <script type="module" src="main.js"></script>
+    <script type="module" src="visualisation_components.js"></script>
+
+    <script src="eel.js"></script>
+    </body>
+</html>

@@ -51,6 +51,8 @@ var creation_component = new components.prompt_creation_component(
     
 )
 
+var menu_bar = new components.menu_bar_component(document.getElementById("save_button"))
+eel.expose(menu_bar.onSaveLibraryResponse.bind(menu_bar) , "onSaveLibraryResponse")
 eel.expose(creation_component.onAddPromptResponse.bind(creation_component) , "add_prompt_response")
 console.log(param_component)
 console.log(themeComponent)

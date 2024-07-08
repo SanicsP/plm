@@ -38,7 +38,8 @@ export class themes_component {
     }
 
     delete_tag(event) {
-        var theme_to_remove = event.target.parentNode.textContent
+        var theme_to_remove = event.target.parentNode.textContent.trim()
+
         console.log("remove theme : " + theme_to_remove)
 
         this.theme_list.splice(this.theme_list.indexOf(theme_to_remove) , 1)
@@ -365,4 +366,25 @@ export class prompt_creation_component {
     clear_console() {
         this.log_text.innerHTML = ""
     }
+}
+
+export class menu_bar_component{
+    constructor(save_button) {
+        this.save_button = save_button
+        this.save_button.addEventListener("click" , this.onSaveLibrary.bind(this) , false)
+    }
+
+    onSaveLibrary() {
+        eel.save_library()()
+    }
+
+    onSaveLibraryResponse(status) {
+        if(status) {
+            alert("library saved with succes")
+        }
+        else {
+            alert("library not saved")
+        }
+    }
+
 }
