@@ -18,14 +18,14 @@ def add_prompt(json_data_string) :
 
 @eel.expose
 def load_library(libray_path) :
-    status = {
-        "ref_images_path" : "none",
-        "result_images_path" : "none" ,
+    result = {
+        "ref_images_path" : prompt_lib.ref_images_path,
+        "result_images_path" : prompt_lib.result_images_path ,
         "status" : "false"  
     }
-    
-    status = prompt_lib.load_library(libray_path)
-    eel.onLoadLibraryResponse(status)
+
+    result["status"] = prompt_lib.load_library(libray_path)
+    eel.onLoadLibraryResponse(result)
     pass
 
 @eel.expose

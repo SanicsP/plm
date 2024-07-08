@@ -1,14 +1,14 @@
 
 
 export class menu_bar {
-    constructor(save_button , open_button , file_load) {
+    constructor(save_button , open_button , file_load , card_list_component) {
         this.save_button = save_button
         this.open_button = open_button
         this.file_load = file_load
-
+        this.card_component_list = card_list_component
         this.save_button.addEventListener("click" , this.onLibrarySave.bind(this) , false)
         this.open_button.addEventListener("click" , this.onLoadLibrary.bind(this) , false)
-        this.file_load.addEventListener("change" , this.onFileLoaded.bind(this) , false)
+        this.file_load.addEventListener("input" , this.onFileLoaded.bind(this) , false)
 
     }
 
@@ -34,10 +34,14 @@ export class menu_bar {
         }
     }
 
-    onLoadLibraryResponse(status) {
-        if(status)
+    onLoadLibraryResponse(result) {
+        result = JSON.parse(result)
+        if(result.status)
         {
             alert("library loaded with success")
+            this.card_component_list.ref_images_path = result.ref_images_path
+            this.card_component_list.result_images_path = result.result_images_path
+
         }
         else {
             alert("library not loaded")
@@ -54,6 +58,10 @@ export class library {
         this.search_bar.addEventListener("keyup" , this.onSearchSubmit.bind(this) )
         console.log(typeof(this.filter_select))
         this.library_data = null
+
+        this.ref_images_path = ""
+        this.result_images_path = ""
+
     }
 
     onSearchSubmit(event) {
@@ -95,8 +103,8 @@ export class library {
         console.log("image container created")
 
         var result_image = document.createElement("img")
-        result_image.setAttribute("alt" , "image")
-
+        result_image.setAttribute("src" , `../libraries/${this.result_images_path}`)
+        
         console.log("result image created")
 
         image_container.append(result_image)

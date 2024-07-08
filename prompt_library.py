@@ -41,9 +41,9 @@ class promptLibrary :
             with open(lib_file_path,  encoding="utf8") as json_file :
                 json_info = json.load(json_file)
 
-                self.ref_images_path = json_info["ref_images_path"]
+                self.ref_images_path = self.libraries_path + "/" + json_info["ref_images_path"]
 
-                self.result_images_path = json_info["result_images_path"]
+                self.result_images_path = self.libraries_path + "/" + json_info["result_images_path"]
 
                 for prompt_info in json_info["prompts"] : 
                     self.prompts_list.append(prompt_data.promptData.dict2prompt_data(prompt_info))

@@ -1,5 +1,1 @@
-{
-    "ref_image_path" : "",
-    "result_image_path" : "" , 
-    "prompts" : []
-}
+{"ref_images_path": "libraries/refs", "result_images_path": "libraries/results", "prompts": [{"name": "A dark cementery", "prompt": "a dark cementery", "negative_prompt": "", "description": "", "themes": ["liminal", "scary"], "extra": {"param_list": [], "model_name": "", "prompt_quality": "2.7", "ref_image_path": "", "result_image_path": ""}}, {"name": "A dark cementery 2", "prompt": "A dark cementery flooded by water", "negative_prompt": "", "description": "", "themes": ["liminal", "weird core", "nostalgia"], "extra": {"param_list": [], "model_name": "", "prompt_quality": "5", "ref_image_path": "", "result_image_path": ""}}, {"name": "five", "prompt": "hello world", "negative_prompt": "", "description": "", "themes": [], "extra": {"param_list": [], "model_name": "", "prompt_quality": "5", "ref_image_path": "image3.png", "result_image_path": "image2.png"}}]}

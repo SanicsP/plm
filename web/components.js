@@ -222,7 +222,7 @@ export class more_details_component {
 
         }
         
-        
+        console.log(ref_path + " " + result_path )
         return {
             model_name : this.model_name.value ,
             prompt_quality : this.prompt_quality.value ,
