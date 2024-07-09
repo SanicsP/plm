@@ -17,14 +17,17 @@ def add_prompt(json_data_string) :
     eel.add_prompt_response(response)
 
 @eel.expose
-def load_library(libray_path) :
+def load_library(libray_name) :
     result = {
-        "ref_images_path" : prompt_lib.ref_images_path,
-        "result_images_path" : prompt_lib.result_images_path ,
+        "ref_images_path" : "",
+        "result_images_path" : "",
         "status" : "false"  
     }
 
-    result["status"] = prompt_lib.load_library(libray_path)
+    result["status"] = prompt_lib.load_library(libray_name)
+    result['ref_images_path'] = prompt_lib.ref_images_path
+    result['result_images_path'] = prompt_lib.result_images_path
+
     eel.onLoadLibraryResponse(result)
     pass
 
@@ -42,5 +45,9 @@ def update_library_request(search_mode , request) :
     print("request results : " , results)
     pass
 
+@eel.expose
+def remove_prompt(prompt) : 
+    result = prompt_lib.delete_prompt(prompt)
+    eel.onDeleteResponse(result)
 
 eel.start("main.html" , mode="edge")

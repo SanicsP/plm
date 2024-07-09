@@ -17,3 +17,4 @@ var menu_bar = new visual_component.menu_bar(
 eel.expose(menu_bar.onLibrarySaveResponse.bind(menu_bar) , "onSaveLibraryResponse")
 eel.expose(menu_bar.onLoadLibraryResponse.bind(menu_bar) , "onLoadLibraryResponse")
 eel.expose(library.onSearchResults.bind(library) , "onSearchResults")
+eel.expose(library.onDeleteResponse.bind(library) , "onDeleteResponse")

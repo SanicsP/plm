@@ -1,0 +1,48 @@
+{
+    "ref_images_path": "refs",
+    "result_images_path": "results",
+    "prompts": [
+      {
+        "name": "A dark cementery",
+        "prompt": "a dark cementery",
+        "negative_prompt": "",
+        "description": "",
+        "themes": ["liminal", "scary"],
+        "extra": {
+          "param_list": [],
+          "model_name": "",
+          "prompt_quality": "2.7",
+          "ref_image_path": "",
+          "result_image_path": ""
+        }
+      },
+      {
+        "name": "A futuristic city",
+        "prompt": "a futuristic city with towering skyscrapers",
+        "negative_prompt": "no cars",
+        "description": "A city of the future with sleek architecture",
+        "themes": ["sci-fi", "urban"],
+        "extra": {
+          "param_list": ["--style", "futuristic"],
+          "model_name": "stable_diffusion",
+          "prompt_quality": "3.2",
+          "ref_image_path": "refs/futuristic_city.jpg",
+          "result_image_path": "results/futuristic_city.png"
+        }
+      },
+      {
+        "name": "A fantasy landscape",
+        "prompt": "a fantasy landscape with dragons and mountains",
+        "negative_prompt": "no humans",
+        "description": "A magical world with mythical creatures",
+        "themes": ["fantasy", "adventure"],
+        "extra": {
+          "param_list": ["--style", "dreamy"],
+          "model_name": "deep_dream",
+          "prompt_quality": "3.5",
+          "ref_image_path": "refs/fantasy_landscape.jpg",
+          "result_image_path": "results/fantasy_landscape.png"
+        }
+      }
+    ]
+  }

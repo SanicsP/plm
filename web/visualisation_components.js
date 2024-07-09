@@ -27,7 +27,15 @@ export class menu_bar {
     onLibrarySaveResponse(status) {
         if(status)
         {
-            alert("library saved with success")
+            this.save_button.classList.toggle("saved")
+            
+            setTimeout(()=>{
+                this.save_button.classList.toggle("saved")
+                
+            },
+            200 
+            )
+            
         }
         else {
             alert("library not saved")
@@ -35,34 +43,60 @@ export class menu_bar {
     }
 
     onLoadLibraryResponse(result) {
-        result = JSON.parse(result)
+        console.log(result)
+        console.log("status :" + result.status)
+        console.log("ref :" + result.ref_images_path)
+        console.log("result :" + result.result_images_path)
+
+
+    
+
         if(result.status)
         {
-            alert("library loaded with success")
+            
             this.card_component_list.ref_images_path = result.ref_images_path
             this.card_component_list.result_images_path = result.result_images_path
-
+            this.card_component_list.onLibraryLoad()
         }
         else {
             alert("library not loaded")
         }
+
+        console.log("load : " + result)
+
     }
 }
 
 export class library {
+    
+    libraries_dir = "web/libraries"
+    
     constructor(search_bar , filter_select , card_component_list) {
         this.search_bar = search_bar
         this.filter_select = filter_select
         this.card_component_list = card_component_list
 
-        this.search_bar.addEventListener("keyup" , this.onSearchSubmit.bind(this) )
+        this.search_bar.addEventListener("keyup" , this.onSearchSubmit.bind(this))
+        this.search_bar.addEventListener("input" , this.onInput.bind(this))
+        
+        
         console.log(typeof(this.filter_select))
         this.library_data = null
 
         this.ref_images_path = ""
         this.result_images_path = ""
 
+        
     }
+
+    onLibraryLoad() {
+        eel.update_library_request(this.filter_select.value , this.search_bar.value.trim())
+    }
+
+    onInput(event) {
+        eel.update_library_request(this.filter_select.value , this.search_bar.value.trim())
+    }
+
 
     onSearchSubmit(event) {
         if(event.key === "Enter"){
@@ -75,6 +109,9 @@ export class library {
        if(json_data != null)
        {
             this.library_data = json_data
+            this.ref_images_path = json_data.ref_images_path
+            this.result_images_path = json_data.result_images_path
+
             console.log(this.library_data.prompts)
             this.update_library()
        }
@@ -103,7 +140,10 @@ export class library {
         console.log("image container created")
 
         var result_image = document.createElement("img")
-        result_image.setAttribute("src" , `../libraries/${this.result_images_path}`)
+        
+        var res_image = this.result_images_path + "/" + card_data.extra.result_image_path
+        console.log("ressource image : " + res_image)
+        result_image.setAttribute("src" , res_image)
         
         console.log("result image created")
 
@@ -136,7 +176,39 @@ export class library {
         console.log("tag container created")
 
         prompt_card.append(image_container , text_container , tag_container)
+        prompt_card.addEventListener("contextmenu" , this.onCardRightClick.bind(this) , false)
+        prompt_card.addEventListener("click" , this.onCardClick.bind(this) , false)
         
         return prompt_card
+    }
+
+    onCardRightClick(event) {
+        var selected_card = event.currentTarget
+        var prompt = selected_card.querySelector(".text-container p").textContent
+        
+        console.log("prompt delete request on : " + selected_card)
+        
+        console.log("the selected prompt is : " + prompt)
+        
+        eel.remove_prompt(prompt)
+        
+        event.preventDefault()
+    }
+
+    onDeleteResponse(result){
+        console.log("delete response : " +JSON.stringify(result))
+        if(result.status) {
+            eel.update_library_request("prompts" , this.search_bar.value.trim())
+        }
+        else {
+            alert(result.error)
+        }
+
+    }
+
+    onCardClick(event) {
+        console.log("prompt copied : ")
+        var prompt = event.currentTarget.querySelector(".text-container p").textContent
+        navigator.clipboard.writeText(prompt)
     }
 }

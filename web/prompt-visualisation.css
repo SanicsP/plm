@@ -7,40 +7,49 @@
     
     --search-bar-color : #ff967b;
     --shadow : 5px 5px 5px rgba(0, 0, 0, 0.473);
-
+    --bg-color :  rgb(31, 23, 48);
+    --header-txt-color : rgb(234, 229, 253);
 }
 html {
     height: 100%;
+    width: 100%;
+    background-color: var(--bg-color);
+
 }
 
 h1{
     text-align: center;
-    color: white;
+    
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
 header {
     width: 100%;
     height: 100px;
+    min-height: 100px;
     margin-bottom: 75px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    color: var(--header-txt-color);
     display: flex;
     flex-direction: column;
     padding: 10px;
-    background-color: var(--card-background-color);
+    justify-content: center;
+
+
 }
 
 header nav {
-    width: 100%;
+    width: 50%;
     height: 50px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    color: white;
+    border-radius: 50px;
+    margin-right: 25%;
+    margin-left: 25%;
+    
     display: flex;
-    gap: 10px;
-    padding-left: 10px;
-    justify-content: space-around;
+    gap: 15px;
+    padding: 5px;
+    justify-content: center;
     align-items: center;
     font-size: larger;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -51,10 +60,15 @@ header nav input[type="file"] {
 }
 header nav span 
 {
-    background-color: #ff8351;
     padding: 2px;
     border-radius: 5px;
-    cursor: pointer;;
+    cursor: pointer;
+    width: fit-content;
+    text-overflow: clip;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    transition: color transform 2s ease-in;
+
 }
 
 header nav span:hover 
@@ -62,16 +76,22 @@ header nav span:hover
     background-color: #ff8554;
     transform: scale(1.1);
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: color transform 2s ease-in;
+    
 }
 
 header nav span a {
     text-decoration: none;
-    color: white;
+    color: var(--header-txt-color);
 }
 .option-menu {
     width: 50px;
     background-color: blue;
 }
+
+
+
+
 .filter-select select{
     width : fit-content;
     background-color: #ff431e;
@@ -101,17 +121,27 @@ select optgroup {
     justify-content: center;
     align-items: center;
     height: 200px;
+
 }
 
 .search-bar {
-    background-color: var(--search-bar-color);
+    background: linear-gradient( -45deg, var(--card-background-color), var(--bg-color));
     width: 50%;
     display: flex;
     padding: 10px;
     border-radius: 300px;
     gap: 5px;
+    box-shadow: var(--shadow);
+    transition: transform 0.5s ease-out;
+
+
 }
 
+
+.search-bar:has(input:focus) {
+    transform: scale(1.02);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
 .search-bar input[type="text"] {
     flex-grow: 1;
     background: none;
@@ -156,18 +186,26 @@ select optgroup {
     width: var(--card-width);
     height: var(--card-height);
     border-radius: 5px;
-    background-color: var(--card-background-color);
+    background : linear-gradient( 45deg , var(--card-background-color) , var(--bg-color));
     overflow: hidden;
     font-family: var(--card-text-font);
     box-shadow: 5px 5px 5px #00000031;
     cursor: pointer;
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    backdrop-filter: blur(10px);
 }
 
 .prompt-card:hover {
    transform: scale(1.02) translate3d(-2px , -2px , 2px); 
+   background : linear-gradient( -45deg , var(--card-background-color) , var(--bg-color));
+    backdrop-filter: blur(10px);
    background-color: #ff725f;
    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.prompt-card:active {
+    transform: scale(0.85);
+    transition: all 0.5s eas-in-out;
 }
 
 .image-container {
@@ -197,6 +235,10 @@ select optgroup {
 .tag-container {
     flex: 0.1 2 0;
     padding: 5px;
+    gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
 .tag-container span {
@@ -204,6 +246,7 @@ select optgroup {
     background-color: var(--tag-color);
     padding: 3px;
     border-radius: 5px;
+    height: fit-content;
 }
 
 .details-menu {
@@ -310,5 +353,19 @@ select optgroup {
     flex-grow: 0.5;
     background-color: #ff5943;
     padding: 5px;
+    
+}
+
+.saved {
+    color: rgb(166, 255, 166);
+    transform: scale(0.7);
+    transition: color transform 2s ease-in;
+
+}
+
+.saved:hover {
+    transform: scale(0.7);
+    background: none;
+    transition: color transform 2s ease-in;
     
 }
