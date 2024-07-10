@@ -46,4 +46,4 @@ def remove_prompt(prompt) :
     result = prompt_lib.delete_prompt(prompt)
     eel.onDeleteResponse(result)
 
-eel.start("main.html" , mode="edge")
+eel.start("main.html" , mode="chrome")
