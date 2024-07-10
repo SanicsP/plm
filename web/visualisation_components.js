@@ -253,7 +253,11 @@ export class details_panel{
             })
 
             window.addEventListener("keydown" , (element)=>{
-                this.details_menu.style = "visibility : hidden;"
+                if (element.code == "Escape")
+                {
+
+                    this.details_menu.style = "visibility : hidden;"
+                }
             })
             
     }

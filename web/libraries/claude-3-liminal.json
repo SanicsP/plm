@@ -1,0 +1,717 @@
+{"ref_images_path": "liminal_results", "result_images_path": "liminal_results", "prompts": [{"name": "sky suburb", "prompt": "144p, poor quality, jpeg artifacts, image noise, vhs filter, distorted screen, photo of a suburb in the sky, a large light source coming from a house, clouds, a white sun", "negative_prompt": "", "description": "", "themes": ["liminal", "weirdcore"], "extra": {"param_list": [], "model_name": "juggernaut xl v8", "prompt_quality": "8.2", "ref_image_path": "image (6).png", "result_image_path": "image (6).png"}}, {"name": "untitled", "prompt": "144p, poor quality, jpeg artifacts, image noise, vhs filter, distorted screen, photo of an empty room full of greenery and foliage", "negative_prompt": "good quality , masterpiece , 4k , 8k , beautifull , greater", "description": "", "themes": ["liminal"], "extra": {"param_list": [{"param_name": "lora 1", "param_value": "sdxl vhs lora"}, {"param_name": "lara2", "param_value": "sdxl old lora"}], "model_name": "juggernaut xl v8", "prompt_quality": "8.2", "ref_image_path": "", "result_image_path": ""}}, {"name": "untitled", "prompt": "144p, poor quality, jpeg artifacts, image noise, vhs filter, distorted screen, photo of a room full of teddy bears looking at the camera", "negative_prompt": "good quality , masterpiece , 4k , 8k , beautifull , greater", "description": "", "themes": ["liminal"], "extra": {"param_list": [{"param_name": "width", "param_value": "1024"}, {"param_name": "height", "param_value": "1024"}, {"param_name": "lora1", "param_value": "vhs lora 0.5"}, {"param_name": "lora 2", "param_value": "old lora 0.3"}], "model_name": "juggernaut xl v8", "prompt_quality": "3.3", "ref_image_path": "", "result_image_path": ""}}, {"name": "untitled", "prompt": "144p, poor quality, jpeg artifacts, image noise, vhs filter, distorted screen, suburban garden at night, dry trees, brown moon, brown sky, televisions broadcasting red on the ground, garden, neighborhood", "negative_prompt": "good quality , masterpiece , 4k , 8k , beautifull , greater", "description": "", "themes": ["liminal"], "extra": {"param_list": [{"param_name": "width", "param_value": "1024"}, {"param_name": "height", "param_value": "1024"}, {"param_name": "lora1", "param_value": "vhs lora 0.5"}, {"param_name": "lora 2", "param_value": "old lora 0.3"}], "model_name": "juggernaut xl v8", "prompt_quality": "3.3", "ref_image_path": "", "result_image_path": ""}}, {"name": "untitled", "prompt": "144p, poor quality, jpeg artifacts, image noise, vhs filter, distorted screen, suburban garden at night, dry trees, brown moon, brown sky, televisions broadcasting a masked man on the ground, garden, neighborhood", "negative_prompt": "good quality , masterpiece , 4k , 8k , beautifull , greater", "description": "", "themes": ["liminal"], "extra": {"param_list": [{"param_name": "width", "param_value": "1024"}, {"param_name": "height", "param_value": "1024"}, {"param_name": "lora1", "param_value": "vhs lora 0.5"}, {"param_name": "lora 2", "param_value": "old lora 0.3"}], "model_name": "juggernaut xl v8", "prompt_quality": "3.3", "ref_image_path": "", "result_image_path": ""}}, {"name": "untitled", "prompt": "144p, poor quality, jpeg artifacts, image noise, vhs filter, distorted screen, a night park, a large beach, a sea, lighthouses, sand hills, dry trees, brown moon, brown sky, televisions broadcasting a masked man on the ground, garden, neighborhood", "negative_prompt": "good quality , masterpiece , 4k , 8k , beautifull , greater", "description": "", "themes": ["liminal"], "extra": {"param_list": [{"param_name": "width", "param_value": "1024"}, {"param_name": "height", "param_value": "1024"}, {"param_name": "lora1", "param_value": "vhs lora 0.5"}, {"param_name": "lora 2", "param_value": "old lora 0.3"}], "model_name": "juggernaut xl v8", "prompt_quality": "3.3", "ref_image_path": "", "result_image_path": ""}}, {"name": "untitled", "prompt": "144p, poor quality, jpeg artifacts, image noise, vhs filter, distorted screen, a night park, a large beach, a sea, lighthouses, sand hills, dry trees, brown moon, brown sky", "negative_prompt": "good quality , masterpiece , 4k , 8k , beautifull , greater", "description": "", "themes": ["liminal"], "extra": {"param_list": [{"param_name": "width", "param_value": "1024"}, {"param_name": "height", "param_value": "1024"}, {"param_name": "lora1", "param_value": "vhs lora 0.5"}, {"param_name": "lora 2", "param_value": "old lora 0.3"}], "model_name": "juggernaut xl v8", "prompt_quality": "3.3", "ref_image_path": "", "result_image_path": ""}}, {"name": "ocean pylones", "prompt": "144p, small resolution, vhs filter, image noise, poor quality photo, an ocean with thousands of electricity pylons lined up to the horizon", "negative_prompt": "good quality , 4k , high definition , people , masterpiece , beautifull", "description": "", "themes": ["liminal", "ocean"], "extra": {"param_list": [{"param_name": "loras", "param_value": "vhs lora , old lora"}], "model_name": "juggeranaut xl v8", "prompt_quality": "4.3", "ref_image_path": "", "result_image_path": ""}}, {"name": "ocean pylones(more detailled)", "prompt": "144p, low resolution, vhs filter, image noise, poor quality photo, an ocean with thousands of wooden electricity pylons lined up, forizon, brown night sky, stars, clouds, smoke, water", "negative_prompt": "good quality , 4k , high definition , people , masterpiece , beautifull", "description": "", "themes": ["liminal", "ocean"], "extra": {"param_list": [{"param_name": "loras", "param_value": "vhs lora , old lora"}, {"param_name": "resolution", "param_value": "1152\u00d7896 \u2223 9:7"}], "model_name": "juggeranaut xl v8", "prompt_quality": "4.3", "ref_image_path": "", "result_image_path": ""}}, {"name": "untitled", "prompt": "144p, low resolution, vhs filter, image noise, poor quality photo, an ocean with thousands of electrical pylons lined up, electrical cables, forizon, brown night sky, brown moon, stars, clouds, smoke, water", "negative_prompt": "good quality , 4k , high definition , people , masterpiece , beautifull", "description": "", "themes": ["liminal", "ocean"], "extra": {"param_list": [{"param_name": "loras", "param_value": "vhs lora , old lora"}, {"param_name": "resolution", "param_value": "1152\u00d7896 \u2223 9:7"}], "model_name": "juggeranaut xl v8", "prompt_quality": "4.3", "ref_image_path": "", "result_image_path": ""}}, {"name": "Arcade room", "prompt": "144p, low resolution, vhs filter, image noise, poor quality photo, an arcade, arcade machines, swimming pools, water geysers, palm trees, purple and blue neon lights, dark purple night sky, purple moon, stars, clouds, neighborhood", "negative_prompt": "good quality , 4k , high definition , people , masterpiece , beautifull", "description": "Generate a room of arcades", "themes": ["liminal", "arcade"], "extra": {"param_list": [{"param_name": "loras", "param_value": "vhs lora , old lora"}, {"param_name": "resolution", "param_value": "1152\u00d7896 \u2223 9:7"}], "model_name": "juggeranaut xl v8", "prompt_quality": "7", "ref_image_path": "", "result_image_path": ""}}, {"name": "Arcade pools", "prompt": "144p, low resolution, vhs filter, image noise, low quality photo arcade machines, swimming pools, water geysers, palm trees, purple and blue neon lights, dark purple night sky, purple moon, stars, clouds", "negative_prompt": "", "description": "", "themes": ["liminal"], "extra": {"param_list": [{"param_name": "resolution", "param_value": "1152\u00d7896 \u2223 9:7"}, {"param_name": "loras", "param_value": "sdxl vhs , sdxl old"}], "model_name": "juggernaut xl v8", "prompt_quality": "8", "ref_image_path": "", "result_image_path": ""}}, {"name": "Arcade pools interior", "prompt": "144p, low resolution, vhs filter, image noise, poor quality photo, a room full of arcade machines, swimming pools, water geysers, palm trees, purple and blue neon lights", "negative_prompt": "good quality , 4k , high definition , people , masterpiece , beautifull", "description": "", "themes": ["liminal"], "extra": {"param_list": [{"param_name": "resolution", "param_value": "1152\u00d7896 \u2223 9:7"}, {"param_name": "loras", "param_value": "sdxl vhs , sdxl old"}], "model_name": "juggernaut xl v8", "prompt_quality": "8", "ref_image_path": "", "result_image_path": ""}}, {"name": "crimsom cementery", "prompt": "Eerie VHS screengrab from a disturbing cult classic horror film of 1986, capturing a desolate graveyard under a crimson moon, bathed in unsettling, liminal twilight. The scene is ominously empty, filled with a sense of dread and surreal, nightmarish vibes. Strange, inexplicable phenomena ripple through the atmosphere, with eerie, ghostly film grain adding to the sense of insanity. Shot on vintage Ektachrome film with heightened, uncanny colors.", "negative_prompt": "good quality , 4k , high definition , people , masterpiece , beautifull", "description": "", "themes": ["liminal"], "extra": {"param_list": [{"param_name": "resolution", "param_value": "1152\u00d7896 \u2223 9:7"}, {"param_name": "loras", "param_value": "sdxl vhs , sdxl old"}], "model_name": "juggernaut xl v8", "prompt_quality": "9", "ref_image_path": "", "result_image_path": ""}}, {"name": "Retro Bedroom", "prompt": "old photo of a pink 1970s bedroom filled with cardboard boxes and TVs on showing static snow. shadows, darkness, low light, closet, pink bed, pink walls", "negative_prompt": "good quality , 4k , high definition , people , masterpiece , beautifull", "description": "", "themes": ["liminal", "retro"], "extra": {"param_list": [{"param_name": "resolution", "param_value": "1152\u00d7896 \u2223 9:7"}, {"param_name": "loras", "param_value": "sdxl vhs , sdxl old"}], "model_name": "juggernaut xl v8", "prompt_quality": "9", "ref_image_path": "", "result_image_path": ""}}, {"name": "Retro Bedroom more detailled(vhs)", "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, a pink 1970s bedroom filled with cardboard boxes and televisions on broadcasting static snow. shadows, darkness, low light, closet, pink bed, pink walls, teddy bear, stairs, dresses on the floor, bright window", "negative_prompt": "good quality , 4k , high definition , people , masterpiece , beautifull", "description": "", "themes": ["liminal", "retro", "interior", "vhs"], "extra": {"param_list": [{"param_name": "resolution", "param_value": "1152\u00d7896 \u2223 9:7"}, {"param_name": "loras", "param_value": "sdxl vhs , sdxl old"}], "model_name": "juggernaut xl v8", "prompt_quality": "9", "ref_image_path": "", "result_image_path": ""}}, {"name": "surch with wash machines", "prompt": "144p, vhs filter, poor quality, small resolution, image noise, hot pixels, old photo, church garden, washing machines lined up, red night sky, blue moon, low light, grass, lamps merger", "negative_prompt": "good quality , 4k , high definition , people , masterpiece , beautifull", "description": "", "themes": ["liminal", "vhs", "exterior"], "extra": {"param_list": [{"param_name": "resolution", "param_value": "1152\u00d7896 \u2223 9:7"}, {"param_name": "loras", "param_value": "sdxl vhs , sdxl old"}], "model_name": "juggernaut xl v8", "prompt_quality": "6.7", "ref_image_path": "", "result_image_path": ""}} , {
+  "name": "Abandoned Mall Fountain",
+  "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, abandoned shopping mall interior, large dried-up fountain in center, dimly lit by flickering fluorescent lights, overgrown plants, broken tiles, reflective puddles on floor, faded store signs, dust particles in air",
+  "negative_prompt": "good quality, 4k, high definition, people, masterpiece, beautiful",
+  "description": "An eerie scene of a once-bustling mall now abandoned and decaying",
+  "themes": ["liminal", "abandoned", "retail", "interior"],
+  "extra": {
+    "param_list": [
+      {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+      {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+    ],
+    "model_name": "juggernaut xl v8",
+    "prompt_quality": "8.5",
+    "ref_image_path": "",
+    "result_image_path": ""
+  }
+},
+{
+  "name": "Foggy Gas Station",
+  "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, isolated gas station at night, thick fog surrounding, single flickering neon sign, pumps casting long shadows, empty road leading to darkness, moonlit sky barely visible through mist, creepy atmosphere",
+  "negative_prompt": "good quality, 4k, high definition, people, masterpiece, beautiful, daytime, clear weather",
+  "description": "A mysterious and unsettling gas station shrouded in fog",
+  "themes": ["liminal", "night", "fog", "exterior"],
+  "extra": {
+    "param_list": [
+      {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+      {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+    ],
+    "model_name": "juggernaut xl v8",
+    "prompt_quality": "9.2",
+    "ref_image_path": "",
+    "result_image_path": ""
+  }
+},
+{
+  "name": "Endless School Hallway",
+  "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, impossibly long school hallway stretching to infinity, rows of identical lockers, fluorescent lights creating alternating patterns of light and shadow, empty bulletin boards, closed classroom doors, polished linoleum floor reflecting distorted images",
+  "negative_prompt": "good quality, 4k, high definition, people, masterpiece, beautiful, short hallway, windows",
+  "description": "A surreal and unsettling view of a seemingly endless school corridor",
+  "themes": ["liminal", "school", "interior", "infinite"],
+  "extra": {
+    "param_list": [
+      {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+      {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+    ],
+    "model_name": "juggernaut xl v8",
+    "prompt_quality": "8.8",
+    "ref_image_path": "",
+    "result_image_path": ""
+  }
+} , {
+  "name": "Submerged Playground",
+  "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, flooded suburban playground, rusty swing set partially submerged, murky water reflecting a grey sky, abandoned slides emerging from the water, floating debris, distant silhouettes of houses, eerie stillness",
+  "negative_prompt": "good quality, 4k, high definition, people, masterpiece, beautiful, sunny day, dry land",
+  "description": "A haunting image of a once-lively playground now submerged in floodwaters, creating a surreal and unsettling landscape that blurs the line between the familiar and the uncanny. The partially submerged play equipment serves as a poignant reminder of lost childhood and the impermanence of human constructions in the face of natural forces.",
+  "themes": ["liminal", "abandoned", "submerged", "playground", "exterior"],
+  "extra": {
+    "param_list": [
+      {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+      {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+    ],
+    "model_name": "juggernaut xl v8",
+    "prompt_quality": "9.5",
+    "ref_image_path": "",
+    "result_image_path": ""
+  }
+},
+{
+  "name": "Retro Airport Limbo",
+  "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, vast empty airport terminal from the 1970s, rows of empty orange plastic seats, large analog departure board with gibberish text, hazy sunlight streaming through high windows, outdated payphones, faded airline logos, sense of timelessness",
+  "negative_prompt": "good quality, 4k, high definition, people, masterpiece, beautiful, modern technology, crowds",
+  "description": "An expansive, deserted airport terminal frozen in time, evoking a sense of limbo and displacement. The retro aesthetics and absence of modern elements create a disorienting atmosphere, as if the space exists outside of normal time and space. The empty seats and nonsensical departure board hint at journeys never taken and destinations never reached.",
+  "themes": ["liminal", "retro", "airport", "empty", "interior"],
+  "extra": {
+    "param_list": [
+      {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+      {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+    ],
+    "model_name": "juggernaut xl v8",
+    "prompt_quality": "9.7",
+    "ref_image_path": "",
+    "result_image_path": ""
+  }
+},
+{
+  "name": "Glitched Reality Supermarket",
+  "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, surreal supermarket aisle stretching impossibly long, products on shelves glitching and morphing, fluorescent lights flickering in strange patterns, floor tiles warping, multiple versions of the same aisle visible simultaneously, digital artifacts and color distortions",
+  "negative_prompt": "good quality, 4k, high definition, people, masterpiece, beautiful, normal perspective, reality",
+  "description": "A mind-bending depiction of a supermarket where reality itself seems to be breaking down. The familiar setting of grocery store aisles is transformed into a nightmarish landscape of glitches and impossibilities, challenging the viewer's perception and creating a sense of unease. This image explores the intersection of digital distortion and liminal spaces, suggesting a world where the boundaries between the real and the virtual have collapsed.",
+  "themes": ["liminal", "glitch", "surreal", "retail", "interior"],
+  "extra": {
+    "param_list": [
+      {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+      {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+    ],
+    "model_name": "juggernaut xl v8",
+    "prompt_quality": "9.8",
+    "ref_image_path": "",
+    "result_image_path": ""
+  }
+},
+{
+  "name": "Neon-Drenched Motel Purgatory",
+  "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, endless motel balconies at night, harsh neon lights in pink and blue, identical doors stretching into darkness, empty ice machines, vending machines glowing ominously, wet pavement reflecting lights, sense of being trapped in a loop",
+  "negative_prompt": "good quality, 4k, high definition, people, masterpiece, beautiful, daytime, natural lighting",
+  "description": "A mesmerizing yet unsettling vision of a motel that seems to exist in a perpetual night, bathed in the glow of neon lights. The repetitive architecture and lack of human presence create a sense of being caught in a time loop or a place between worlds. The image explores themes of isolation, repetition, and the eerie beauty found in mundane spaces when viewed through a liminal lens.",
+  "themes": ["liminal", "neon", "night", "motel", "exterior"],
+  "extra": {
+    "param_list": [
+      {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+      {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+    ],
+    "model_name": "juggernaut xl v8",
+    "prompt_quality": "9.6",
+    "ref_image_path": "",
+    "result_image_path": ""
+  }
+} , {
+    "name": "Infinite Office Cubicles",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, endless rows of identical office cubicles, flickering fluorescent lights, beige and grey colors, outdated computer monitors, empty chairs, maze-like layout, sense of corporate limbo",
+    "negative_prompt": "good quality, 4k, high definition, people, masterpiece, beautiful, modern office, open plan",
+    "description": "A depressing vista of countless office cubicles stretching as far as the eye can see, embodying the monotony and soul-crushing nature of corporate life.",
+    "themes": ["liminal", "office", "repetition", "interior"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "8.7",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Pastel Nightmare Nursery",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, abandoned nursery with pastel colors, oversized and distorted baby toys, cracked mirrors, shadows in impossible angles, empty cribs, time-worn wallpaper with unsettling patterns",
+    "negative_prompt": "good quality, 4k, high definition, people, masterpiece, beautiful, cheerful, normal proportions",
+    "description": "A once-cheerful nursery twisted into a surreal and unsettling space, playing with scale and expectations to create a dreamlike yet disturbing atmosphere.",
+    "themes": ["liminal", "childhood", "surreal", "interior"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.2",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Decaying Drive-In Theater",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, abandoned drive-in theater at dusk, rusted car skeletons, overgrown weeds, torn screen showing static, dilapidated concession stand, faded movie posters, eerie silence",
+    "negative_prompt": "good quality, 4k, high definition, people, masterpiece, beautiful, new cars, modern",
+    "description": "The remnants of a once-popular drive-in theater, now a ghostly reminder of bygone entertainment eras, frozen in a perpetual twilight.",
+    "themes": ["liminal", "abandoned", "nostalgia", "exterior"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "8.9",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Interdimensional Train Station",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, surreal train station platform, multiple vanishing points, trains from different eras coexisting, clock faces showing impossible times, ghostly passengers, spatial distortions, fog rolling in",
+    "negative_prompt": "good quality, 4k, high definition, clear image, masterpiece, beautiful, normal perspective",
+    "description": "A mind-bending train station where the laws of physics and time don't apply, suggesting travel between dimensions rather than mere destinations.",
+    "themes": ["liminal", "surreal", "transportation", "time"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.5",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Desolate Desert Highway",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, endless desert highway stretching to horizon, shimmering heat waves, lone gas station mirage, skeletal billboards, dusty abandoned car, ominous storm clouds gathering",
+    "negative_prompt": "good quality, 4k, high definition, people, masterpiece, beautiful, lush landscape, city",
+    "description": "A desolate stretch of highway cutting through an unforgiving desert, embodying isolation and the uncertain journey ahead.",
+    "themes": ["liminal", "desert", "road", "exterior"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "8.3",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Glitched Virtual Plaza",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, digital plaza with vaporwave aesthetics, glitching architecture, pixelated palm trees, statues corrupting into code, neon signs with nonsensical text, sky texture repeating",
+    "negative_prompt": "good quality, 4k, high definition, realistic, masterpiece, beautiful, natural environment",
+    "description": "A digital fever dream merging vaporwave aesthetics with glitch art, creating a virtual plaza caught between reality and computer-generated illusions.",
+    "themes": ["liminal", "digital", "vaporwave", "glitch"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.7",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Suburban Twilight Zone",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, cookie-cutter suburban houses with subtle wrongness, impossible shadows, repeating clouds, TV antenna emitting strange lights, empty streets, sense of watching eyes",
+    "negative_prompt": "good quality, 4k, high definition, people, masterpiece, beautiful, normal suburban life",
+    "description": "A seemingly normal suburban neighborhood with an undercurrent of unease, where small details hint at a reality slightly out of sync with our own.",
+    "themes": ["liminal", "suburban", "uncanny", "exterior"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "8.8",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Quantum Laundromat",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, laundromat existing in multiple states simultaneously, washing machines phasing in and out of reality, clothes floating mid-air, detergent boxes with Schrödinger's cat theme, tiled floor with impossible geometry",
+    "negative_prompt": "good quality, 4k, high definition, people, masterpiece, beautiful, normal laundromat, realistic physics",
+    "description": "A mind-bending laundromat where quantum physics seems to apply to everyday objects, blurring the lines between the mundane and the extraordinary.",
+    "themes": ["liminal", "quantum", "surreal", "interior"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.4",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Forgotten Library of Babel",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, infinite library with impossible architecture, books with ever-changing titles, staircases leading nowhere, mirrors reflecting non-existent spaces, dust motes frozen in time",
+    "negative_prompt": "good quality, 4k, high definition, people, masterpiece, beautiful, normal library, organized shelves",
+    "description": "An endless, labyrinthine library inspired by Borges, where knowledge itself seems to shift and morph, defying comprehension and cataloging.",
+    "themes": ["liminal", "library", "infinite", "interior"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.6",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Liminal School Cafeteria",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, empty school cafeteria, long tables stretching into darkness, trays with unidentifiable food, clock stuck at 3:33, faint echoes of laughter, streaky windows letting in strange light",
+    "negative_prompt": "good quality, 4k, high definition, people, masterpiece, beautiful, busy cafeteria, normal food",
+    "description": "A deserted school cafeteria frozen in time, where the absence of students creates an unsettling atmosphere of abandoned routines and lingering echoes.",
+    "themes": ["liminal", "school", "empty", "interior"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "8.5",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },{
+    "name": "Suburban Night Anomaly",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, suburban backyard at night, well-manicured lawn, bare trees with branches illuminated, old CRT TV in the middle of the yard showing static, faint glow on horizon, side of a house visible",
+    "negative_prompt": "good quality, 4k, high definition, people, daytime, modern technology",
+    "description": "A surreal nighttime scene in a suburban backyard, where the unexpected presence of an old television creates an eerie atmosphere, blurring the lines between the mundane and the mysterious.",
+    "themes": ["liminal", "suburban", "night", "technology", "exterior"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.3",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Nocturnal Garden Glitch",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, night garden with perfectly trimmed grass, leafless trees with glowing branches, retro electronics scattered on lawn, faint colorful lights in sky, house siding barely visible",
+    "negative_prompt": "good quality, 4k, high definition, people, daytime, normal garden items",
+    "description": "A nighttime garden scene that blends the ordinary with the uncanny, featuring anachronistic technology and unsettling lighting that suggests a glitch in reality.",
+    "themes": ["liminal", "night", "garden", "glitch", "exterior"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.1",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Twilight Zone Backyard",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, eerie suburban backyard at dusk, perfectly mowed lawn, skeletal trees with luminous branches, vintage TV emitting strange light, subtle portal in night sky, edge of house visible",
+    "negative_prompt": "good quality, 4k, high definition, people, daylight, normal household items",
+    "description": "A liminal space where a typical suburban backyard transitions into a Twilight Zone-esque setting, with ordinary objects taking on an otherworldly quality under the cover of night.",
+    "themes": ["liminal", "suburban", "twilight", "supernatural", "exterior"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.4",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Digital Wilderness",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, suburban lawn at night transformed into digital wildscape, trees with pixel-like leaves, grass with scanlines, old TV as alien monolith, glitching stars in sky, house fading into digital noise",
+    "negative_prompt": "good quality, 4k, high definition, people, daytime, realistic nature",
+    "description": "A surreal blend of natural suburban landscape and digital artifacts, creating a liminal space where reality seems to be breaking down into pixels and glitches.",
+    "themes": ["liminal", "digital", "nature", "glitch", "exterior"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.5",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  } , {
+    "name": "Chronoshift Mall",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, abandoned mall where each store is from a different decade, mannequins changing poses when unobserved, escalators running backwards, reflections in shop windows showing alternate realities",
+    "negative_prompt": "good quality, 4k, high definition, people, modern mall, consistent time period",
+    "description": "A disorienting shopping center where time itself seems fragmented, each storefront a window into a different era, creating a sense of temporal displacement.",
+    "themes": ["liminal", "time travel", "retail", "surreal"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.7",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Quantum Classroom Paradox",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, classroom existing in multiple states simultaneously, desks phasing in and out of reality, chalkboard with equations solving themselves, students' belongings from different centuries, windows showing impossible views",
+    "negative_prompt": "good quality, 4k, high definition, people, normal classroom, consistent physics",
+    "description": "An academic space where the laws of quantum mechanics apply at a macro scale, blurring the lines between past, present, and future learning environments.",
+    "themes": ["liminal", "education", "quantum", "surreal"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.6",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Fractured Memory Motel",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, infinite motel corridor with doors leading to fragmented memories, room numbers changing, potted plants evolving rapidly, ice machine dispensing yesterdays, neon sign flickering between languages",
+    "negative_prompt": "good quality, 4k, high definition, people, normal motel, logical layout",
+    "description": "A never-ending motel hallway where each room contains shattered pieces of forgotten memories, creating a labyrinth of lost time and identity.",
+    "themes": ["liminal", "memory", "infinity", "surreal"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.8",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Escher's Digital Playground",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, impossible playground structure with slides looping into themselves, swings that go sideways, merry-go-round spinning on vertical axis, all constructed from glitching digital blocks, background shifting between 8-bit and photorealistic",
+    "negative_prompt": "good quality, 4k, high definition, people, normal playground, consistent art style",
+    "description": "A mind-bending children's playground that defies spatial logic, merging Escher-like impossibilities with unstable digital aesthetics.",
+    "themes": ["liminal", "childhood", "digital", "impossible geometry"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.9",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Retrofuturist Transit Hub",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, retro-futuristic transit station with art deco elements, departures board listing impossible destinations, vehicles from different eras phasing in and out, passengers fading like holograms, ceiling opening to a technicolor cosmos",
+    "negative_prompt": "good quality, 4k, high definition, consistent time period, real locations, normal physics",
+    "description": "A grand transportation center that blends past visions of the future with impossible physics, creating a liminal space between eras and realities.",
+    "themes": ["liminal", "retro-futurism", "transportation", "surreal"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.7",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Holographic Nature Preserve",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, nature trail where flora and fauna flicker between real and holographic, trees with binary code for leaves, streams of flowing data, animals glitching in and out of existence, sky occasionally showing system errors",
+    "negative_prompt": "good quality, 4k, high definition, people, normal nature, consistent reality",
+    "description": "A serene yet unsettling natural environment that blurs the line between organic life and digital simulation, questioning the nature of reality itself.",
+    "themes": ["liminal", "nature", "technology", "simulation"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.8",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Interdimensional Food Court",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, sprawling food court with cuisine from different dimensions, tables floating mid-air, vending machines dispensing abstract concepts, diners appearing and disappearing randomly, neon signs in alien languages",
+    "negative_prompt": "good quality, 4k, high definition, people, normal food court, earth foods",
+    "description": "A vast eatery that serves as a crossroads between realities, offering glimpses into infinite culinary possibilities and defying conventional physics.",
+    "themes": ["liminal", "food", "interdimensional", "surreal"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.9",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Recursive Suburbia",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, suburban street that loops into itself, houses growing smaller towards horizon, mailboxes containing miniature versions of the same neighborhood, street signs pointing to impossibly named locations, sky with geometrically perfect clouds",
+    "negative_prompt": "good quality, 4k, high definition, people, normal suburb, logical layout",
+    "description": "A mind-bending residential area that folds in on itself, creating an endless loop of suburban life that becomes increasingly surreal and miniaturized.",
+    "themes": ["liminal", "suburban", "recursion", "surreal"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.7",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  } , {
+    "name": "Nostalgia Vortex Arcade",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, swirling vortex of arcade cabinets from different eras, game characters escaping their screens, neon lights forming impossible shapes, floor transitioning between carpet and digital grid, ceiling opening to a pixelated cosmos",
+    "negative_prompt": "good quality, 4k, high definition, people, modern gaming, consistent time period",
+    "description": "A dizzying maelstrom of gaming history where the boundaries between games and reality blur, creating a space of pure nostalgic energy and digital chaos.",
+    "themes": ["liminal", "nostalgia", "gaming", "vortex"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.8",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Cronenberg Convenience Store",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, convenience store where products are fusing with shelves, cash register melting into counter, fluorescent lights pulsing like veins, floor tiles rippling organically, security mirrors showing alternate realities",
+    "negative_prompt": "good quality, 4k, high definition, people, normal store, non-organic objects",
+    "description": "A disturbing fusion of the mundane and the organic, where everyday objects take on unsettling life-like qualities in a familiar yet horrifyingly altered space.",
+    "themes": ["liminal", "body horror", "retail", "surreal"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.7",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Recursive Office Purgatory",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, infinite office space with cubicles fractaling into smaller versions of themselves, water coolers dispensing time instead of water, elevators opening to exact copies of the same floor, windows showing the back of the observer's head",
+    "negative_prompt": "good quality, 4k, high definition, people, normal office, logical layout",
+    "description": "An endlessly repeating corporate space that traps the viewer in a loop of bureaucratic surrealism, where each attempt to escape only leads deeper into the maze.",
+    "themes": ["liminal", "office", "recursion", "purgatory"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.9",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Quantum Supermarket Labyrinth",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, supermarket aisles that shift and change when not observed, products aging backwards, shopping carts moving on their own, checkout counters leading to different decades, price tags showing alternate realities",
+    "negative_prompt": "good quality, 4k, high definition, people, normal supermarket, consistent layout",
+    "description": "A mind-bending grocery store where the act of shopping becomes a journey through time and possibility, with reality constantly shifting based on the observer's choices.",
+    "themes": ["liminal", "retail", "quantum", "maze"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.8",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Fever Dream Hospital",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, hospital corridor stretching impossibly, doors leading to abstract medical nightmares, IV drips flowing upwards, x-ray images showing alternate dimensions, floor tiles with pulsing veins, ceiling occasionally replaced by pulsating organs",
+    "negative_prompt": "good quality, 4k, high definition, people, normal hospital, medical accuracy",
+    "description": "A hallucinatory medical facility where the line between healing and surreal horror blurs, embodying the disorientation and unease of illness.",
+    "themes": ["liminal", "medical", "nightmare", "surreal"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.7",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Glitch Beach Purgatory",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, endless beach with glitching waves frozen mid-crash, sand shifting between pixels and grains, beach umbrellas folding into impossible shapes, horizon line constantly buffering, beachgoers fading in and out like bad reception",
+    "negative_prompt": "good quality, 4k, high definition, clear weather, normal beach, realistic water",
+    "description": "A seaside limbo where the promise of relaxation is perpetually out of reach, trapped in a digital purgatory of loading screens and buffering reality.",
+    "themes": ["liminal", "beach", "glitch", "purgatory"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.8",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Timeless Train Terminal",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, train station where all of history arrives simultaneously, platforms extending into void, trains from different eras phasing through each other, clocks showing impossible times, passengers dissolving into smoke, tickets printed with prophecies",
+    "negative_prompt": "good quality, 4k, high definition, people, normal train station, consistent time period",
+    "description": "A grand central station that serves as a nexus for all of time, where the boundaries between past, present, and future dissolve into a confusing miasma of arrivals and departures.",
+    "themes": ["liminal", "time travel", "transportation", "history"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.9",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Escher's Elementary School",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, school building with impossible architecture, staircases leading to upside-down classrooms, hallways looping into themselves, water fountains defying gravity, lockers containing miniature versions of the school, chalkboards writing themselves",
+    "negative_prompt": "good quality, 4k, high definition, people, normal school, logical architecture",
+    "description": "An educational institution that defies spatial logic, turning the familiar routines of school life into a mind-bending journey through impossible geometries and paradoxes.",
+    "themes": ["liminal", "education", "impossible geometry", "surreal"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs, sdxl old"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.8",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  } , {
+    "name": "Fractal Food Court of Eternity",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, infinitely repeating food court where each restaurant contains a smaller version of the entire food court, patrons aging and de-aging as they move between levels, food transforming on the plate, neon signs flickering between languages and dimensions, floors shifting between tiles, carpet, and liquid crystal",
+    "negative_prompt": "good quality, 4k, high definition, consistent scale, normal food, realistic physics, single language",
+    "description": "An endlessly recursive dining experience that challenges perception and reality, where the act of eating becomes a journey through time, space, and culinary impossibilities.",
+    "themes": ["liminal", "fractal", "food", "infinity", "surreal"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs 0.6, sdxl old 0.4"},
+        {"param_name": "cfg_scale", "param_value": "9"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.9",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Quantum Library of Babel",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, vast library with books containing every possible combination of letters, shelves extending into infinity, librarians phasing between realities, card catalogs predicting future events, reading rooms where time flows backwards, staircases made of floating words, shadows cast by invisible readers",
+    "negative_prompt": "good quality, 4k, high definition, finite space, coherent text, normal physics, single timeline",
+    "description": "A mind-bending repository of all possible knowledge, where the act of reading becomes a quantum event and information exists in all states simultaneously.",
+    "themes": ["liminal", "library", "quantum", "knowledge", "infinity"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs 0.7, sdxl old 0.5"},
+        {"param_name": "cfg_scale", "param_value": "10"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "10",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Chrono-Synclastic Infundibulum Mall",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, shopping mall where all time periods coexist, storefronts from different eras and futures, mannequins evolving through human history, escalators traveling through time, fountains flowing backwards, shoppers fading between past and future versions of themselves, advertisements predicting and reminiscing simultaneously",
+    "negative_prompt": "good quality, 4k, high definition, single time period, consistent fashion, normal aging, linear time",
+    "description": "A retail space that exists at all points in time concurrently, offering a shopping experience that transcends temporal boundaries and challenges the very concept of trends and progress.",
+    "themes": ["liminal", "time travel", "retail", "evolution", "surreal"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs 0.65, sdxl old 0.45"},
+        {"param_name": "cfg_scale", "param_value": "9.5"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.9",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Möbius Strip Suburb",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, suburban neighborhood built on a möbius strip, houses seamlessly transitioning between right-side up and upside down, streets looping impossibly, residents living normal lives oblivious to spatial distortion, lawns growing in impossible directions, mail trucks driving on walls and ceilings, sunlight coming from multiple directions",
+    "negative_prompt": "good quality, 4k, high definition, flat landscape, normal gravity, single sun, euclidean geometry",
+    "description": "A residential area that challenges the very concept of up and down, where suburban normality persists despite a fundamental reimagining of spatial relationships and gravity itself.",
+    "themes": ["liminal", "suburban", "impossible geometry", "perception"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs 0.55, sdxl old 0.35"},
+        {"param_name": "cfg_scale", "param_value": "8.5"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "9.8",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  },
+  {
+    "name": "Schrödinger's Amusement Park",
+    "prompt": "144p, vhs filter, poor quality, low resolution, image noise, hot pixels, old photo, theme park where all rides exist in multiple states simultaneously, roller coasters with quantum tunneling, ferris wheel rotating in impossible directions, carousel horses phasing in and out of reality, cotton candy made of probability clouds, park visitors existing and not existing, entrance gates leading to multiple parallel parks",
+    "negative_prompt": "good quality, 4k, high definition, classical physics, single state of being, normal theme park rides, consistent reality",
+    "description": "An entertainment venue where the fundamental uncertainties of quantum mechanics are scaled up to the macroscopic world, offering thrills that defy not just gravity, but reality itself.",
+    "themes": ["liminal", "quantum", "amusement park", "paradox", "surreal"],
+    "extra": {
+      "param_list": [
+        {"param_name": "resolution", "param_value": "1152×896 ｜ 9:7"},
+        {"param_name": "loras", "param_value": "sdxl vhs 0.75, sdxl old 0.55"},
+        {"param_name": "cfg_scale", "param_value": "11"}
+      ],
+      "model_name": "juggernaut xl v8",
+      "prompt_quality": "10",
+      "ref_image_path": "",
+      "result_image_path": ""
+    }
+  }
+
+  ]
+
+}

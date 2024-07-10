@@ -34,6 +34,7 @@ export class themes_component {
         });
 
         this.add_theme_button.addEventListener("click" , this.add_tag.bind(this) , false)
+        this.theme_bar.addEventListener("keydown" , this.onBarConfirm.bind(this))
         this.theme_list = []
     }
 
@@ -48,7 +49,19 @@ export class themes_component {
 
     }
 
+    onBarConfirm(event){
+        if(event.code == "Enter") {
+            this.add_tag(event)
+        }
+        else if (event.code == "Escape") {
+            this.theme_list_div.innerHTML = ""
+            this.theme_list = []
+        }
+    } 
+
     add_tag(event) {
+        
+        
         var theme_text = this.theme_bar.value.trim()
         if (theme_text== "" || this.theme_list.includes(theme_text)) {
             return   
@@ -73,7 +86,9 @@ export class themes_component {
         this.theme_list_div.append(tag_sapn)
 
         console.log("tag list : " + this.theme_list)
-
+        if(event.target.type =="text"){
+            event.target.value = ""
+        }
 
     }
 
