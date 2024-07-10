@@ -15,13 +15,25 @@ class promptLibrary :
 
     def add_prompt(self , json_data_string) :
         prompt_info = prompt_data.promptData.json2prompt_data(json_data_string)
-        
+        if not self.library_path.is_file() : 
+            print("no file")
+            return {
+                "status" : False , 
+                "error_msg" : str("""> ERROR : A library load is required for save a prompt.  
+                > please make sure you loaded the good library""")
+            }
         if self.check_double(prompt_info.name , prompt_info.prompt) : 
             self.prompts_list.append(prompt_info)
-            return True
+            return {
+                "status" : True , 
+                "error_msg" : "no error"
+            }
         else : 
             print("the prompt already_exists")
-            return False
+            return {
+                "status" : False , 
+                "error_msg" :"> ERROR : the prompt already exists"
+            }
         pass
 
     def check_double(self , prompt_name , prompt) :

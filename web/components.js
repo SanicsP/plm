@@ -170,11 +170,23 @@ export class more_details_component {
         this.ref_image_file.addEventListener("change" , this.onRefFileLoad.bind(this) , false)
 
         this.prompt_quality.addEventListener("input" , this.onSliderChange.bind(this))
-
+        
         this.is_valid = true
-       
+        
+
+        this.ref_file_name = ""
+        this.result_file_name = ""
+
+        
+
+
+      
+
+      
 
     }
+
+   
 
     onSliderChange(event) {
         var new_value = event.target.value
@@ -196,7 +208,7 @@ export class more_details_component {
     {
         console.log(event.target.files[0].name)
         this.ref_image_div.style = `
-            background-color : #89BEFF;
+            background-color : #412E54;
             color : white;
         `
     }
@@ -204,7 +216,7 @@ export class more_details_component {
     onResultFileLoad(event) {
         console.log(event.target.files[0].name)
         this.result_image_div.style = `
-            background-color : #89BEFF;
+            background-color : #412E54;
             color : white;
         `
     }
@@ -278,6 +290,12 @@ export class prompt_creation_component {
         if(validation_data.status) {
             eel.add_prompt(JSON.stringify(this.prompt_info))()
             this.log_prompt()
+            var files = document.querySelectorAll('input[type="file"]')
+            files.forEach((element)=>{
+                element.type = "text"
+                element.type = "file"
+                element.parentElement.style = ""
+            })
         }
         else{
             this.log_errors(validation_data)
@@ -338,14 +356,14 @@ export class prompt_creation_component {
     }
 
     onAddPromptResponse(response) {
-        if(response === false) {
-            
+        
+        if(!response.status) {
+            console.log(response)
+
             this.clear_console()
             
-            var error_msg = `> Error the prompt \"${this.prompt_info.prompt}\" named 
-            \"${this.prompt_info.name}\" already exists`
-
-
+            var error_msg = response.error_msg
+            console.log(error_msg)
             this.log_error(error_msg)
         }
     }
