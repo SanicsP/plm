@@ -105,6 +105,19 @@ header nav span a {
     text-align: center;
 }
 
+.icon-container{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.icon-container img:hover {
+    transform: scale(1.4);
+    transition: all 0.2s ease-in;
+    filter: blur(2px);
+}
+
 select option{
   border: none;
   outline: none;

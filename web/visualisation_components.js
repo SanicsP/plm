@@ -71,7 +71,7 @@ export class library {
     
     libraries_dir = "web/libraries"
     
-    constructor(search_bar , filter_select , card_component_list) {
+    constructor(search_bar , filter_select , card_component_list , detail_component) {
         this.search_bar = search_bar
         this.filter_select = filter_select
         this.card_component_list = card_component_list
@@ -79,8 +79,7 @@ export class library {
         this.search_bar.addEventListener("keyup" , this.onSearchSubmit.bind(this))
         this.search_bar.addEventListener("input" , this.onInput.bind(this))
         
-        
-        console.log(typeof(this.filter_select))
+        this.detail_component = detail_component
         this.library_data = null
 
         this.ref_images_path = ""
@@ -123,7 +122,7 @@ export class library {
     update_library() {
         this.card_component_list.innerHTML = ""
         this.library_data.prompts.forEach((element) => {
-            console.log(this.card_component_list)
+           
             this.card_component_list.append(this.get_card_div(element))
         })
     }
@@ -133,20 +132,19 @@ export class library {
         var prompt_card = document.createElement("div")
         prompt_card.setAttribute("class" , "prompt-card")
         
-        console.log("card created")
+       
 
         var image_container = document.createElement("div")
         image_container.setAttribute("class" , "image-container")
-        console.log("image container created")
+     
 
         var result_image = document.createElement("img")
         
         var res_image = this.result_images_path + "/" + card_data.extra.result_image_path
-        console.log("ressource image : " + res_image)
+       
         result_image.setAttribute("src" , res_image)
         
-        console.log("result image created")
-
+       
         image_container.append(result_image)
 
         var text_container = document.createElement("div")
@@ -162,7 +160,7 @@ export class library {
         prompt.textContent = card_data.prompt
         
         text_container.append(prompt_name , prompt)
-        console.log("text container created")
+        
 
         var tag_container = document.createElement("div")
         
@@ -173,13 +171,32 @@ export class library {
             tag.textContent = element
             tag_container.append(tag)
         });
-        console.log("tag container created")
+       
 
-        prompt_card.append(image_container , text_container , tag_container)
+        var icon_container = document.createElement("div")
+        icon_container.setAttribute("class" , "icon-container")
+
+        var more_icon = document.createElement("img")
+        more_icon.setAttribute("src" , "resources/more2.svg")
+
+        more_icon.addEventListener("click" , this.onMoreClick.bind(this) )
+        icon_container.append(more_icon )
+
+        prompt_card.append(image_container , text_container , tag_container , icon_container)
+
         prompt_card.addEventListener("contextmenu" , this.onCardRightClick.bind(this) , false)
         prompt_card.addEventListener("click" , this.onCardClick.bind(this) , false)
         
         return prompt_card
+    }
+
+    onMoreClick(event) {
+        var selected_prompt = event.currentTarget.parentElement.
+        parentElement.querySelector(".text-container").querySelector("p").textContent.trim()
+        var selected_prompt_data = this.library_data.prompts.find((element)=> element.prompt == selected_prompt)     
+        
+        this.detail_component.show(selected_prompt_data)
+        event.stopPropagation()
     }
 
     onCardRightClick(event) {
@@ -210,5 +227,76 @@ export class library {
         console.log("prompt copied : ")
         var prompt = event.currentTarget.querySelector(".text-container p").textContent
         navigator.clipboard.writeText(prompt)
+    }
+}
+
+
+export class details_panel{
+    constructor(details_menu , prompt_name , prompt , negative_prompt ,
+        description , theme_list , model_name , quality , param_list , ref_img ,
+        result_img , close_button
+        ) {
+            this.details_menu = details_menu
+            this.prompt_name = prompt_name
+            this.prompt = prompt
+            this.negative_prompt = negative_prompt
+            this.description = description
+            this.theme_list = theme_list
+            this.model_name = model_name
+            this.quality = quality 
+            this.param_list = param_list
+            this.ref_img = ref_img
+            this.result_img = result_img
+            this.close_button = close_button
+            close_button.addEventListener("click" , (element)=> {
+                this.details_menu.style = "visibility : hidden;"
+            })
+
+            window.addEventListener("keydown" , (element)=>{
+                this.details_menu.style = "visibility : hidden;"
+            })
+            
+    }
+
+    show(prompt_data) {
+        this.details_menu.style = "visibility : visible;"
+        
+        this.prompt_name.textContent = prompt_data.name
+        
+        this.prompt.textContent = prompt_data.prompt
+        
+        this.negative_prompt.textContent = prompt_data.negative_prompt
+        
+        this.description.textContent = prompt_data.description
+        
+       
+        this.theme_list.innerHTML = ""
+
+        for(var i = 0 ; i < prompt_data.themes.length ; i++) {
+            var theme = document.createElement("span")
+            theme.textContent = prompt_data.themes[i]
+            this.theme_list.append(theme)
+
+        }
+        this.param_list.innerHTML = ""
+
+        for(var i = 0 ; i < prompt_data.extra.param_list.length ; i++) {
+            var parameter = document.createElement("div")
+            parameter.setAttribute("class" , "parameter")
+            var name_span = document.createElement("span")
+            name_span.setAttribute("class" , "param-name-info")
+            name_span.textContent = prompt_data.extra.param_list[i].param_name
+
+            var value_span = document.createElement("span")
+            value_span.setAttribute("class" , "param-value-info")
+            value_span.textContent = prompt_data.extra.param_list[i].param_value
+            
+            parameter.append(name_span , value_span)
+            this.param_list.append(parameter)
+        }
+
+        this.model_name.textContent = prompt_data.extra.model_name
+        this.quality.textContent = "Quality : " + prompt_data.extra.prompt_quality
+
     }
 }
