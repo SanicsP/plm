@@ -1,27 +1,48 @@
 :root {
-    --card-background-color : #ff614c ;
-    --tag-color : #ff3b2d;
-    --card-text-color : #ffffff;
+    --main-color : #342939;
+    --main-color2 : #181419;
+
+    --secondary-color : #F0E9FD;
+    --atention-color : #F0544F;
+    --atention-color2 :#ff0c0c;
+
+    --action-color : #C44440;
+
     --card-width : 350px;
     --card-height : 400px;
     
-    --search-bar-color : #ff967b;
+    --main-font :Arial, Helvetica, sans-serif; 
     --shadow : 5px 5px 5px rgba(0, 0, 0, 0.473);
-    --bg-color :  rgb(31, 23, 48);
-    --header-txt-color : rgb(234, 229, 253);
+    --tilte-size : 12px;
+    --desc-size : 12px;
 }
 html {
     height: 100%;
     width: 100%;
-    background-color: var(--bg-color);
+    background: var(--main-color);
+    overflow-y: scroll;
 
+}
+
+::-webkit-scrollbar {
+    background-color: var(--main-color2);
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--action-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--atention-color);
+    border-radius: 5px;
 }
 
 h1{
     text-align: center;
-    
     text-transform: uppercase;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--main-font);
 }
 
 
@@ -30,12 +51,14 @@ header {
     height: 100px;
     min-height: 100px;
     margin-bottom: 75px;
-    color: var(--header-txt-color);
+    color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     padding: 10px;
     justify-content: center;
-
+    font-family: var(--main-font);
+    font-size: var(--tilte-size);
+    
 
 }
 
@@ -51,8 +74,6 @@ header nav {
     padding: 5px;
     justify-content: center;
     align-items: center;
-    font-size: larger;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header nav input[type="file"] {
@@ -73,7 +94,7 @@ header nav span
 
 header nav span:hover 
 {
-    background-color: #ff8554;
+    background-color: var(--action-color);
     transform: scale(1.1);
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     transition: color transform 2s ease-in;
@@ -94,8 +115,8 @@ header nav span a {
 
 .filter-select select{
     width : fit-content;
-    background-color: #ff431e;
-    color: #ffffff;
+    background-color: var(--atention-color);
+    color: var(--secondary-color);
     border-radius: 10px;
     position: relative;
     padding: 2px;
@@ -138,7 +159,7 @@ select optgroup {
 }
 
 .search-bar {
-    background: linear-gradient( -45deg, var(--card-background-color), var(--bg-color));
+    background: linear-gradient( -45deg, var(--atention-color2), var(--atention-color));
     width: 50%;
     display: flex;
     padding: 10px;
@@ -160,7 +181,7 @@ select optgroup {
     background: none;
     outline: none;
     border: none;
-    color: #ffffff;
+    color: var(--secondary-color);
     
 }
 .search-bar input[type="text"]:focus {
@@ -169,7 +190,7 @@ select optgroup {
 
 
 .search-bar input[type="text"]::placeholder {
-    color: rgba(253, 254, 255, 0.692);
+    color: var(--secondary-color);
 }
 .search-bar span {
     content: url("resources/search.svg");
@@ -199,20 +220,19 @@ select optgroup {
     width: var(--card-width);
     height: var(--card-height);
     border-radius: 5px;
-    background : linear-gradient( 45deg , var(--card-background-color) , var(--bg-color));
+    background : linear-gradient( 45deg , var(--atention-color) , var(--atention-color2));
     overflow: hidden;
-    font-family: var(--card-text-font);
-    box-shadow: 5px 5px 5px #00000031;
+    font-family: var(--main-font);
+    box-shadow: var(--shadow);
     cursor: pointer;
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    backdrop-filter: blur(10px);
+    color: var(--secondary-color);
 }
 
 .prompt-card:hover {
    transform: scale(1.02) translate3d(-2px , -2px , 2px); 
-   background : linear-gradient( -45deg , var(--card-background-color) , var(--bg-color));
+   background : linear-gradient( -45deg , var(--action-color) , var(--atention-color2));
     backdrop-filter: blur(10px);
-   background-color: #ff725f;
    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -255,11 +275,11 @@ select optgroup {
 }
 
 .tag-container span {
-    color: var(--card-text-color);
-    background-color: var(--tag-color);
+    background-color: var(--atention-color);
     padding: 3px;
     border-radius: 5px;
     height: fit-content;
+    color: var(--secondary-color);
 }
 
 .details-menu {
@@ -273,7 +293,8 @@ select optgroup {
     width: var(--details-width);
     height: var(--details-heigh);
 
-    background-color: #ffddd7;
+    background-color: var(--main-color2);
+
     box-shadow: var(--shadow);
     border-radius: 5px;
     z-index: 5;
@@ -286,6 +307,8 @@ select optgroup {
 
     display: flex;
     flex-direction: column;
+    box-shadow: var(--shadow);
+
 }
 
 .text-details {
@@ -294,7 +317,10 @@ select optgroup {
 }
 
 .text-info {
-    background-color: white;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    font-family: var(--main-font);
+    font-size: var(--desc-size);
     border-radius: 5px;
     padding: 5px;
     min-height: 125px;
@@ -303,18 +329,18 @@ select optgroup {
 }
 
 .details-menu h2 , .details-menu h3 {
-    background-color: #ff6854;
-    border-radius: 10px;
+    background-color: var(--atention-color);
+    border-radius: 2px;
     padding: 5px;
     text-align: center;
-    color: white;
+    color: var(--secondary-color);
     margin-right: 10px;
     margin-left: 10px;
 
 }
 
 .details-menu .tag-container {
-    background-color: white;
+    background-color: var(--main-color);
     border-radius: 5px;
     min-height: 50px;
     padding: 10px;
@@ -338,11 +364,11 @@ select optgroup {
 .param-list {
     margin-left: 20px;
     margin-right: 20px;
-    background-color: white;
+    background-color: var(--main-color);
     padding: 10px;
     border-radius: 5px;
     min-height: 100px;
-
+    color: var(--secondary-color);
     max-height: 300px;
     overflow: auto;
 
@@ -357,14 +383,14 @@ select optgroup {
 
 .parameter span:nth-child(2n) {
     flex-grow: 1;
-    background-color: #ff270b;
+    background-color: var(--action-color);
     padding: 5px;
     
 }
 
 .parameter span:nth-child(2n+1) {
     flex-grow: 0.5;
-    background-color: #ff5943;
+    background-color: var(--main-color2);
     padding: 5px;
     
 }
